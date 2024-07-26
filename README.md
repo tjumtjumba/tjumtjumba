@@ -1,16 +1,45 @@
-## Hi there 👋
+# Tjum Tjumba Website
 
-<!--
-**tjumtjumba/tjumtjumba** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Website URL
 
-Here are some ideas to get you started:
+- [tjumtjumba.com.au](tjumtjumba.com.au)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### Technologies
+
+- [Next JS](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind](https://react.dev/)
+
+---
+
+### Local development
+
+You will need [node](https://nodejs.org/en) and [npm](https://www.npmjs.com/) installed.
+
+After you have cloned the repo, install the dependecnies with:
+
+```bash
+npm i
+```
+
+Then start the local development server:
+
+```bash
+npm run dev
+```
+
+---
+
+### Deployment
+
+Website is hosted on `Vercel`.
+
+Simply `push` your changes to the `main` branch to automatically deploy.
+
+---
+
+### Contributors
+
+- [richhdev](https://github.com/richhdev)
