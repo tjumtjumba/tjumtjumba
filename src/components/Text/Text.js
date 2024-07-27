@@ -20,7 +20,7 @@ export default function Text(props) {
   const Outer = props.as || "p";
   return (
     <Outer
-      className={`text-[#FEBC0F] text-base md:text-lg lg:text-xl 2xl:text-2xl text-balance ${
+      className={`text-[#FEBC0F] text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-balance ${
         dinCondensed.className
       } ${props.className ?? ""}`}
     >
@@ -37,7 +37,7 @@ export function Heading(props) {
   const Outer = props.as || "h1";
   return (
     <Outer
-      className={`text-[#FEBC0F] text-xl md:text-2xl lg:text-3xl xl:text-4xl bold ${arialBlack.className}`}
+      className={`text-[#FEBC0F] text-2xl md:text-3xl lg:text-4xl xl:text-5xl bold ${arialBlack.className}`}
     >
       {props.children}
     </Outer>

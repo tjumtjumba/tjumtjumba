@@ -16,7 +16,7 @@ export default function Contact() {
 
       <Section>
         <div className="flex flex-col md:flex-row gap-3 md:gap-6 lg:gap-12">
-          <div className="relative aspect-square md:w-1/2 rounded-3xl overflow-hidden">
+          <div className="relative aspect-video md:aspect-square md:w-1/2 rounded-3xl overflow-hidden">
             <Image
               src={imgBg}
               fill={true}
@@ -26,7 +26,7 @@ export default function Contact() {
             />
 
             <div className="absolute w-full h-full grid place-content-center text-center">
-              <Strong>General Enquiries</Strong>
+              {/* <Strong>General Enquiries</Strong>
               <Text className="underline">
                 <a href="mailto:hello@tjumtjumba.com.au">
                   hello@tjumtjumba.com.au
@@ -39,11 +39,16 @@ export default function Contact() {
                 <a href="mailto:bookings@tjumtjumba.com.au">
                   bookings@tjumtjumba.com.au
                 </a>
+              </Text> */}
+
+              <Strong>Instagram</Strong>
+              <Text className="underline">
+                <a href="https://www.instagram.com/tjumtjumba">@tjumtjumba</a>
               </Text>
             </div>
           </div>
 
-          <div className="relative aspect-square md:w-1/2 rounded-3xl overflow-hidden">
+          <div className="relative hidden md:block aspect-square md:w-1/2 rounded-3xl overflow-hidden">
             <Image
               src={imgAnth}
               fill={true}
