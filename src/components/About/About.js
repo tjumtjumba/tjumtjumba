@@ -20,9 +20,9 @@ export default function About() {
       </div>
 
       <div className="relative lg:aspect-[16/5]">
-        <div className="h-full md:max-w-[50%] md:ml-auto text-[#FEBC0F] p-6 md:p-9 lg:p-12">
-          <div className="h-full grid place-items-center max-w-[680px]">
-            <Text className="text-balance">
+        <div className="h-full md:max-w-[50%] md:ml-auto text-[#FEBC0F] p-6 md:p-9 lg:p-12 grid place-items-center ">
+          <div className="h-full grid place-items-center max-w-[400px] md:max-w-[680px]">
+            <Text className="text-balance text-center md:text-left">
               <strong>Tjum Tjumba</strong>, an innovative music and events
               company with a deep commitment to supporting and uplifting First
               Nations people and their cultures. <br />
@@ -35,7 +35,7 @@ export default function About() {
           {/* <p className="underline mt-6">Read more</p> */}
         </div>
 
-        <div className="hidden md:block  absolute bottom-0 w-[50%] h-[120%]">
+        <div className="relative h-[200px] mx-auto md:absolute md:bottom-0 md:w-[50%] md:h-[120%]">
           <Image
             src={imgBraj}
             fill={true}

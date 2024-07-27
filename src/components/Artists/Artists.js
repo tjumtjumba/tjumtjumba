@@ -79,7 +79,7 @@ export default function Artists() {
   return (
     <>
       <Section>
-        <header className="flex place-content-between">
+        <header className="flex place-content-between items-end">
           <Heading>Artists</Heading>
           <div className="flex gap-6">
             <button

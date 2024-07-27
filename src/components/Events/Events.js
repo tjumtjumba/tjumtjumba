@@ -11,7 +11,7 @@ export default function Events() {
   return (
     <>
       <Section>
-        <header className="flex place-content-between">
+        <header className="flex place-content-between items-end">
           <Heading>Events</Heading>
           <Text className="">
             <a href={eventHref} className="flex items-center gap-3">
