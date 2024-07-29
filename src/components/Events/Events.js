@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Section from "../Section/Section";
 import Text, { Heading } from "../Text/Text";
-import imgArrow from "@/img/arrow-right.svg";
-import imgEvent from "./event.jpg";
+// import imgArrow from "@/img/arrow-right.svg";
+import imgEventMobile from "./wzzed-single-release-portrait.jpg";
+import imgEvent from "./wzzed-single-release-landscape.jpg";
 
 export default function Events() {
   const eventHref =
@@ -13,7 +14,7 @@ export default function Events() {
       <Section>
         <header className="flex place-content-between items-end">
           <Heading>Events</Heading>
-          <Text className="">
+          {/* <Text>
             <a href={eventHref} className="flex items-center gap-3">
               <span className="underline">Tickets</span>
               <span className="relative block w-[40px] h-[40px]">
@@ -26,19 +27,28 @@ export default function Events() {
                 />
               </span>
             </a>
-          </Text>
+          </Text> */}
         </header>
       </Section>
 
-      <Section innerClassName="relative aspect-video">
+      <Section innerClassName="relative aspect-[9/12] md:aspect-[16/11]">
         <a
           href={eventHref}
           className="absolute top-0 right-0 bottom-0 left-0 block rounded-3xl overflow-hidden border-[red]"
         >
           <Image
+            className="md:hidden"
+            src={imgEventMobile}
+            fill={true}
+            alt="Wzzed Single Launch - Carlton Club - 1st September 2024"
+            style={{ objectFit: "cover" }}
+            priority
+          />
+          <Image
+            className="hidden md:block"
             src={imgEvent}
             fill={true}
-            alt="Launch party"
+            alt="Wzzed Single Launch - Carlton Club - 1st September 2024"
             style={{ objectFit: "cover" }}
             priority
           />
