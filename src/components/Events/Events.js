@@ -12,7 +12,7 @@ export default function Events() {
   return (
     <>
       <Section>
-        <header className="flex place-content-between items-end">
+        <header className="flex place-content-between items-end mb-8 md:mb-10 lg:mb-12 xl:mb-20">
           <Heading>Events</Heading>
           {/* <Text>
             <a href={eventHref} className="flex items-center gap-3">
@@ -32,10 +32,7 @@ export default function Events() {
       </Section>
 
       <Section innerClassName="relative aspect-[9/12] md:aspect-[16/11]">
-        <a
-          href={eventHref}
-          className="absolute top-0 right-0 bottom-0 left-0 block rounded-3xl overflow-hidden border-[red]"
-        >
+        <div className="absolute top-0 right-0 bottom-0 left-0 rounded-3xl overflow-hidden bg-[#0f0f0f]">
           <Image
             className="md:hidden"
             src={imgEventMobile}
@@ -52,7 +49,7 @@ export default function Events() {
             style={{ objectFit: "cover" }}
             priority
           />
-        </a>
+        </div>
       </Section>
     </>
   );

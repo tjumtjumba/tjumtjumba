@@ -31,5 +31,7 @@ export default function Home() {
 }
 
 function Spacer() {
-  return <div className="block h-[80px] md:h-[100px] lg:h-[120px]" />;
+  return (
+    <div className="block h-[80px] md:h-[100px] lg:h-[120px] xl:h-[200px]" />
+  );
 }

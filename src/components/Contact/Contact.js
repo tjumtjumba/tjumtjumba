@@ -9,15 +9,16 @@ export default function Contact() {
   return (
     <>
       <Section>
-        <header className="flex place-content-between">
+        <header className="mb-8 md:mb-10 lg:mb-12 xl:mb-20">
           <Heading>Contact</Heading>
         </header>
       </Section>
 
       <Section>
         <div className="flex flex-col md:flex-row gap-3 md:gap-6 lg:gap-12">
-          <div className="relative aspect-video md:aspect-square md:w-1/2 rounded-3xl overflow-hidden">
+          <div className="relative aspect-video md:aspect-square md:w-1/2 rounded-3xl overflow-hidden bg-[#0f0f0f]">
             <Image
+              className="pointer-events-none select-none"
               src={imgBg}
               fill={true}
               alt="background"
@@ -48,7 +49,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="relative hidden md:block aspect-square md:w-1/2 rounded-3xl overflow-hidden">
+          <div className="relative hidden md:block aspect-square md:w-1/2 rounded-3xl overflow-hidden bg-[#0f0f0f] pointer-events-none select-none">
             <Image
               src={imgAnth}
               fill={true}

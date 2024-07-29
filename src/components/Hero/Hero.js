@@ -4,7 +4,7 @@ import imgLogo from "./hero-logo.svg";
 
 function Hero() {
   return (
-    <div className="relative w-full aspect-video lg:aspect-[16/5] bg-[#CE181E]">
+    <div className="relative w-full aspect-video lg:aspect-[16/5] 2xl:aspect-[16/4] bg-[#CE181E] pointer-events-none select-none ">
       <Image
         src={imgBg}
         fill={true}

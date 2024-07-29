@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import smoothscroll from "smoothscroll-polyfill";
 import Section from "../Section/Section";
-import Text, { Heading } from "../Text/Text";
+import { Heading, Strong } from "../Text/Text";
 import imgArrow from "@/img/arrow-right.svg";
 import imgAnimaOmada from "./anima-omada.jpg";
 import imgPepeSilvia from "./pepe-silvia.jpg";
@@ -23,7 +23,6 @@ export default function Artists() {
   }, []);
 
   useEffect(() => {
-    // debugger;
     if (!scrollContainerRef || !arrowPrevRef || !arrowNextRef) {
       return;
     }
@@ -79,7 +78,7 @@ export default function Artists() {
   return (
     <>
       <Section>
-        <header className="flex place-content-between items-end">
+        <header className="flex place-content-between items-end mb-8 md:mb-10 lg:mb-12 xl:mb-20">
           <Heading>Artists</Heading>
           <div className="flex gap-6">
             <button
@@ -111,13 +110,13 @@ export default function Artists() {
         <div
           className="absolute left-0 top-0 bottom-0 z-20  h-full bg-gradient-to-r from-black"
           style={{
-            width: "calc(50vw - min(1680px, 1618px)/2 - 12px)",
+            width: "calc(50vw - min(1680px, 1400px)/2 - 12px)",
           }}
         />
         <div
           className="absolute top-0 right-0 bottom-0  z-20  h-full bg-gradient-to-l from-black"
           style={{
-            width: "calc(50vw - min(1680px, 1618px)/2 - 12px)",
+            width: "calc(50vw - min(1680px, 1400px)/2 - 12px)",
           }}
         />
 
@@ -128,7 +127,7 @@ export default function Artists() {
           <div
             className=" w-[fit-content]"
             style={{
-              padding: "0 calc(50vw - min(1680px, 1618px)/2 - 12px)",
+              padding: "0 calc(50vw - min(1680px, 1400px)/2 - 12px)",
             }}
           >
             <div className="grid grid-flow-col gap-3 md:gap-6 lg:gap-9">
@@ -149,9 +148,7 @@ export default function Artists() {
 function Artist(props) {
   return (
     <div
-      className={`relative w-[180px] md:w-[240px] lg:w-[340px] aspect-[5/7] rounded-3xl overflow-hidden ${
-        props.className ?? ""
-      }`}
+      className={`relative w-[180px] md:w-[240px] lg:w-[340px] aspect-[5/7] rounded-3xl overflow-hidden ${props.className} bg-[#0f0f0f]`}
     >
       <Image
         src={props.img}
@@ -160,9 +157,9 @@ function Artist(props) {
         style={{ objectFit: "cover" }}
         priority
       />
-      <Text className="absolute py-3 px-6 md:py-4 md:px-7 z-10 bottom-0">
+      <Strong className="absolute py-3 px-6 md:py-4 md:px-7 z-10 bottom-0">
         {props.title}
-      </Text>
+      </Strong>
     </div>
   );
 }
