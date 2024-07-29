@@ -20,9 +20,7 @@ export default function Text(props) {
   const Outer = props.as || "p";
   return (
     <Outer
-      className={`text-[#FEBC0F] text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-balance ${
-        dinCondensed.className
-      } ${props.className ?? ""}`}
+      className={`text-[#FEBC0F] text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-balance ${dinCondensed.className} ${props.className}`}
     >
       {props.children}
     </Outer>
@@ -30,7 +28,11 @@ export default function Text(props) {
 }
 
 export function Strong(props) {
-  return <Text className={dinCondensedBold.className}>{props.children}</Text>;
+  return (
+    <Text className={`${dinCondensedBold.className} ${props.className}`}>
+      {props.children}
+    </Text>
+  );
 }
 
 export function Heading(props) {

@@ -10,15 +10,13 @@ export default function Section(props) {
 
 function SectionOuter(props) {
   return (
-    <section className={`p-3 ${props.className ?? ""}`}>
-      {props.children}
-    </section>
+    <section className={`p-3 ${props.className}`}>{props.children}</section>
   );
 }
 
 function SectionInner(props) {
   return (
-    <div className={`max-w-[1618px] mx-auto ${props.className ?? ""}`}>
+    <div className={`max-w-[1400px] mx-auto ${props.className}`}>
       {props.children}
     </div>
   );

@@ -8,8 +8,8 @@ import Text from "../Text/Text";
 
 export default function About() {
   return (
-    <Section innerClassName="relative">
-      <div className="absolute top-0 right-0 bottom-0 left-0 rounded-3xl overflow-hidden">
+    <Section innerClassName="relative ">
+      <div className="absolute top-0 right-0 bottom-0 left-0 rounded-3xl overflow-hidden bg-[#0f0f0f] pointer-events-none select-none">
         <Image
           src={imgBg}
           fill={true}
@@ -35,7 +35,7 @@ export default function About() {
           {/* <p className="underline mt-6">Read more</p> */}
         </div>
 
-        <div className="relative h-[200px] mx-auto md:absolute md:bottom-0 md:w-[50%] md:h-[120%]">
+        <div className="relative h-[200px] mx-auto md:absolute md:bottom-0 md:w-[50%] md:h-[120%] pointer-events-none select-none">
           <Image
             src={imgBraj}
             fill={true}
