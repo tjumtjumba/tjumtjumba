@@ -13,7 +13,6 @@ export default function Footer() {
           fill={true}
           alt="Background"
           style={{ objectFit: "cover" }}
-          priority
         />
 
         <div className="absolute top-0 right-0 bottom-0 left-0 z-10 grid place-content-center">

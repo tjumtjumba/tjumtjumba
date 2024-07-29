@@ -155,7 +155,6 @@ function Artist(props) {
         fill={true}
         alt={props.title}
         style={{ objectFit: "cover" }}
-        priority
       />
       <Strong className="absolute py-3 px-6 md:py-4 md:px-7 z-10 bottom-0">
         {props.title}

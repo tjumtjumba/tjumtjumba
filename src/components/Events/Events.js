@@ -39,7 +39,6 @@ export default function Events() {
             fill={true}
             alt="Wzzed Single Launch - Carlton Club - 1st September 2024"
             style={{ objectFit: "cover" }}
-            priority
           />
           <Image
             className="hidden md:block"
@@ -47,7 +46,6 @@ export default function Events() {
             fill={true}
             alt="Wzzed Single Launch - Carlton Club - 1st September 2024"
             style={{ objectFit: "cover" }}
-            priority
           />
         </div>
       </Section>

@@ -55,7 +55,6 @@ export default function Contact() {
               fill={true}
               alt="Anth"
               style={{ objectFit: "cover" }}
-              priority
             />
           </div>
         </div>
