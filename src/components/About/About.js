@@ -19,7 +19,7 @@ export default function About() {
         />
       </div>
 
-      <div className="relative lg:aspect-[16/5]">
+      <div className="relative lg:aspect-[16/6]">
         <div className="h-full md:max-w-[50%] md:ml-auto text-[#FEBC0F] p-6 md:p-9 lg:p-12 grid place-items-center ">
           <div className="h-full grid place-items-center max-w-[400px] md:max-w-[680px]">
             <Text className="text-balance text-center md:text-left">

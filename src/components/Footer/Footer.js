@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Section from "../Section/Section";
 import imgBg from "../About/about-bg.jpg";
-import Text from "../Text/Text";
+import Text, { TextSmall } from "../Text/Text";
 
 export default function Footer() {
   return (
@@ -16,9 +16,9 @@ export default function Footer() {
         />
 
         <div className="absolute top-0 right-0 bottom-0 left-0 z-10 grid place-content-center">
-          <Text className="text-white">
+          <TextSmall className="text-white">
             &copy; copyright 2024 - Tjum Tjumba
-          </Text>
+          </TextSmall>
         </div>
       </div>
     </div>

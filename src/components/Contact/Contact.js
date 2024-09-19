@@ -15,8 +15,8 @@ export default function Contact() {
       </Section>
 
       <Section>
-        <div className="flex flex-col md:flex-row gap-3 md:gap-6 lg:gap-12">
-          <div className="relative aspect-video md:aspect-square md:w-1/2 rounded-3xl overflow-hidden bg-[#0f0f0f]">
+        <div className="grid grid-flow-col gap-3 md:gap-6 lg:gap-9  relative hide-scrollbars overflow-x-scroll scroll-smooth p-3 overflow-hidden">
+          <div className="relative aspect-square min-w-[240px] rounded-3xl overflow-hidden bg-[#0f0f0f]">
             <Image
               className="pointer-events-none select-none"
               src={imgBg}
@@ -49,7 +49,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="relative hidden md:block aspect-square md:w-1/2 rounded-3xl overflow-hidden bg-[#0f0f0f] pointer-events-none select-none">
+          <div className="relative aspect-square min-w-[240px] rounded-3xl overflow-hidden bg-[#0f0f0f]">
             <Image
               src={imgAnth}
               fill={true}

@@ -3,8 +3,9 @@ import Image from "next/image";
 import Section from "../Section/Section";
 import Text, { Heading } from "../Text/Text";
 // import imgArrow from "@/img/arrow-right.svg";
-import imgEventMobile from "./wzzed-single-release-portrait.jpg";
-import imgEvent from "./wzzed-single-release-landscape.jpg";
+// import videoLaunchParty from "./launch-event.mp4";
+import imgWzzedSingle from "./wzzed-single-release.jpg";
+// import videoBergSingle from "./berg-single-release.mp4";
 
 export default function Events() {
   const eventHref =
@@ -31,22 +32,34 @@ export default function Events() {
         </header>
       </Section>
 
-      <Section innerClassName="relative aspect-[9/12] md:aspect-[16/11]">
-        <div className="absolute top-0 right-0 bottom-0 left-0 rounded-3xl overflow-hidden bg-[#0f0f0f]">
-          <Image
-            className="md:hidden"
-            src={imgEventMobile}
-            fill={true}
-            alt="Wzzed Single Launch - Carlton Club - 1st September 2024"
-            style={{ objectFit: "cover" }}
-          />
-          <Image
-            className="hidden md:block"
-            src={imgEvent}
-            fill={true}
-            alt="Wzzed Single Launch - Carlton Club - 1st September 2024"
-            style={{ objectFit: "cover" }}
-          />
+      <Section>
+        <div className="grid grid-flow-col gap-3 md:gap-6 lg:gap-9  relative hide-scrollbars overflow-x-scroll scroll-smooth p-3 overflow-hidden">
+          <div className="relative aspect-square min-w-[240px]">
+            <div className="absolute top-0 right-0 bottom-0 left-0 rounded-3xl overflow-hidden bg-[#0f0f0f]">
+              <video autoPlay muted loop width="100%">
+                <source src="/berg-single-release.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div className="relative aspect-square min-w-[240px]">
+            <div className="absolute top-0 right-0 bottom-0 left-0 rounded-3xl overflow-hidden bg-[#0f0f0f]">
+              <Image
+                src={imgWzzedSingle}
+                fill={true}
+                alt="Wzzed Single Launch - Carlton Club - 1st September 2024"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+          </div>
+
+          <div className="relative aspect-square min-w-[240px]">
+            <div className="absolute top-0 right-0 bottom-0 left-0 rounded-3xl overflow-hidden bg-[#0f0f0f]">
+              <video autoPlay muted loop width="100%">
+                <source src="/launch-event.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
         </div>
       </Section>
     </>

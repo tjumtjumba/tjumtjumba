@@ -16,7 +16,7 @@ function SectionOuter(props) {
 
 function SectionInner(props) {
   return (
-    <div className={`max-w-[1400px] mx-auto ${props.className}`}>
+    <div className={`max-w-[1200px] mx-auto ${props.className}`}>
       {props.children}
     </div>
   );

@@ -127,7 +127,7 @@ export default function Artists() {
           <div
             className=" w-[fit-content]"
             style={{
-              padding: "0 calc(50vw - min(1680px, 1400px)/2 - 12px)",
+              padding: "0 calc(50vw - min(1680px, 1200px)/2 - 12px)",
             }}
           >
             <div className="grid grid-flow-col gap-3 md:gap-6 lg:gap-9">

@@ -18,8 +18,8 @@ export default function Home() {
         <Spacer />
         <Artists />
         <Spacer />
-        {/* <Events />
-        <Spacer /> */}
+        <Events />
+        <Spacer />
         <Contact />
         <Spacer />
       </main>

@@ -27,6 +27,17 @@ export default function Text(props) {
   );
 }
 
+export function TextSmall(props) {
+  const Outer = props.as || "p";
+  return (
+    <Outer
+      className={`text-[#FEBC0F] text-sm md:text-md text-balance ${dinCondensed.className} ${props.className}`}
+    >
+      {props.children}
+    </Outer>
+  );
+}
+
 export function Strong(props) {
   return (
     <Text className={`${dinCondensedBold.className} ${props.className}`}>
